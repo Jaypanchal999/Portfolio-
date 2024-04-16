@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: black;
+}
+
+body::-webkit-scrollbar{
+    background-color: transparent;
+    width: 0px;
+}
+.main{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.page1 {
+    padding-top: 14vh;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page1 h1{
+    font-size: 210px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    height: 35vh;
+}
+
+.page1 h4 {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 2.5;
+}
+@keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+  }
+.page1 h4 span{
+    background: linear-gradient(to right , rgb(117, 0, 117) ,rgb(243, 116, 243), rgb(247, 63, 93),rgb(115, 0, 115));
+    font-size: 28px;
+    font-weight: 200; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: background-pan 3s linear infinite;
+    -webkit-animation: background-pan 3s linear infinite;
+}
+
+
+.page1 h5 {
+    font-weight: 200;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 50px;
+    padding-top: 140px;
+}
+.circle{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 0;
+    left: 0;
+    z-index: 9999; 
+    pointer-events: none;
+    
+}
+
+
+.circles{
+    display: none;
+    z-index: 999;
+    mix-blend-mode:difference;
+}
+
+.page2{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
